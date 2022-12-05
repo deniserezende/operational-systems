@@ -1,0 +1,85 @@
+\hypertarget{classVirtualMemory_1_1TLB}{}\doxysection{Virtual\+Memory.\+T\+LB Class Reference}
+\label{classVirtualMemory_1_1TLB}\index{VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classVirtualMemory_1_1TLB_a83a8b8f15103ff02e7cdb0ab8127015e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, list tlb\+\_\+page, list tlb\+\_\+frame, int index)
+\item 
+list \mbox{\hyperlink{classVirtualMemory_1_1TLB_a6a89d8c4cac4bc2b65e1b8207c1234d6}{read\+\_\+from\+\_\+disk}} (self, list physical\+\_\+memory, int page\+\_\+number)
+\item 
+list, int, int, int \mbox{\hyperlink{classVirtualMemory_1_1TLB_a20950d20c563372913af3592b8789649}{find\+\_\+page}} (self, int virtual\+\_\+address, int page\+\_\+faults, list page\+\_\+table, list physical\+\_\+memory, int open\+\_\+frame, int tlb\+\_\+hits)
+\item 
+None \mbox{\hyperlink{classVirtualMemory_1_1TLB_ad8e11605361eae35556b1c7384897f80}{print\+\_\+tlb}} (self)
+\item 
+None \mbox{\hyperlink{classVirtualMemory_1_1TLB_ab2d4ed98ae2869b87448ba255ee4fe4b}{print\+\_\+page\+\_\+table\+\_\+not\+\_\+minus\+\_\+one}} (self, list page\+\_\+table)
+\item 
+None \mbox{\hyperlink{classVirtualMemory_1_1TLB_a0b4f1822b145dbfe6eb7ff737cf8bff8}{print\+\_\+page\+\_\+table\+\_\+bigger\+\_\+than\+\_\+zero}} (self, list page\+\_\+table)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a38f3084bd2857ade257d0c51b038ef1e}\label{classVirtualMemory_1_1TLB_a38f3084bd2857ade257d0c51b038ef1e}} 
+{\bfseries T\+L\+B\+\_\+page}
+\item 
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a9ffc8ef857f04f9060373587404c7014}\label{classVirtualMemory_1_1TLB_a9ffc8ef857f04f9060373587404c7014}} 
+{\bfseries T\+L\+B\+\_\+frame}
+\item 
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a315fdd45bd30ac43fa65c972187f6e19}\label{classVirtualMemory_1_1TLB_a315fdd45bd30ac43fa65c972187f6e19}} 
+{\bfseries index}
+\item 
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a62ffde161da24463f0ab96b884a91cae}\label{classVirtualMemory_1_1TLB_a62ffde161da24463f0ab96b884a91cae}} 
+{\bfseries first\+\_\+available\+\_\+frame}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a83a8b8f15103ff02e7cdb0ab8127015e}\label{classVirtualMemory_1_1TLB_a83a8b8f15103ff02e7cdb0ab8127015e}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None Virtual\+Memory.\+T\+L\+B.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list}]{tlb\+\_\+page,  }\item[{list}]{tlb\+\_\+frame,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function initializes a TLB.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVirtualMemory_1_1TLB_a20950d20c563372913af3592b8789649}\label{classVirtualMemory_1_1TLB_a20950d20c563372913af3592b8789649}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!find\_page@{find\_page}}
+\index{find\_page@{find\_page}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{find\_page()}{find\_page()}}
+{\footnotesize\ttfamily  list, int, int, int Virtual\+Memory.\+T\+L\+B.\+find\+\_\+page (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{virtual\+\_\+address,  }\item[{int}]{page\+\_\+faults,  }\item[{list}]{page\+\_\+table,  }\item[{list}]{physical\+\_\+memory,  }\item[{int}]{open\+\_\+frame,  }\item[{int}]{tlb\+\_\+hits }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function finds the page using both TLB and PageTable.\end{DoxyVerb}
+ \mbox{\Hypertarget{classVirtualMemory_1_1TLB_a0b4f1822b145dbfe6eb7ff737cf8bff8}\label{classVirtualMemory_1_1TLB_a0b4f1822b145dbfe6eb7ff737cf8bff8}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!print\_page\_table\_bigger\_than\_zero@{print\_page\_table\_bigger\_than\_zero}}
+\index{print\_page\_table\_bigger\_than\_zero@{print\_page\_table\_bigger\_than\_zero}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{print\_page\_table\_bigger\_than\_zero()}{print\_page\_table\_bigger\_than\_zero()}}
+{\footnotesize\ttfamily  None Virtual\+Memory.\+T\+L\+B.\+print\+\_\+page\+\_\+table\+\_\+bigger\+\_\+than\+\_\+zero (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list}]{page\+\_\+table }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function prints the page number used in order.\end{DoxyVerb}
+ \mbox{\Hypertarget{classVirtualMemory_1_1TLB_ab2d4ed98ae2869b87448ba255ee4fe4b}\label{classVirtualMemory_1_1TLB_ab2d4ed98ae2869b87448ba255ee4fe4b}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!print\_page\_table\_not\_minus\_one@{print\_page\_table\_not\_minus\_one}}
+\index{print\_page\_table\_not\_minus\_one@{print\_page\_table\_not\_minus\_one}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{print\_page\_table\_not\_minus\_one()}{print\_page\_table\_not\_minus\_one()}}
+{\footnotesize\ttfamily  None Virtual\+Memory.\+T\+L\+B.\+print\+\_\+page\+\_\+table\+\_\+not\+\_\+minus\+\_\+one (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list}]{page\+\_\+table }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function prints the page numbers unused.\end{DoxyVerb}
+ \mbox{\Hypertarget{classVirtualMemory_1_1TLB_ad8e11605361eae35556b1c7384897f80}\label{classVirtualMemory_1_1TLB_ad8e11605361eae35556b1c7384897f80}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!print\_tlb@{print\_tlb}}
+\index{print\_tlb@{print\_tlb}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{print\_tlb()}{print\_tlb()}}
+{\footnotesize\ttfamily  None Virtual\+Memory.\+T\+L\+B.\+print\+\_\+tlb (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function prints the page number and frame if used.\end{DoxyVerb}
+ \mbox{\Hypertarget{classVirtualMemory_1_1TLB_a6a89d8c4cac4bc2b65e1b8207c1234d6}\label{classVirtualMemory_1_1TLB_a6a89d8c4cac4bc2b65e1b8207c1234d6}} 
+\index{VirtualMemory.TLB@{VirtualMemory.TLB}!read\_from\_disk@{read\_from\_disk}}
+\index{read\_from\_disk@{read\_from\_disk}!VirtualMemory.TLB@{VirtualMemory.TLB}}
+\doxysubsubsection{\texorpdfstring{read\_from\_disk()}{read\_from\_disk()}}
+{\footnotesize\ttfamily  list Virtual\+Memory.\+T\+L\+B.\+read\+\_\+from\+\_\+disk (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list}]{physical\+\_\+memory,  }\item[{int}]{page\+\_\+number }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function reads from BACKING_STORE.bin\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Virtual\+Memory.\+py\end{DoxyCompactItemize}

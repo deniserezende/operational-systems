@@ -1,0 +1,51 @@
+\hypertarget{namespacemain}{}\doxysection{main Namespace Reference}
+\label{namespacemain}\index{main@{main}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacemain_a763672203a64408f6beab70b3eeeb197}\label{namespacemain_a763672203a64408f6beab70b3eeeb197}} 
+{\bfseries txt\+\_\+file} = None
+\item 
+\mbox{\Hypertarget{namespacemain_a8ffeff6fb657733d470ce19eea76f965}\label{namespacemain_a8ffeff6fb657733d470ce19eea76f965}} 
+{\bfseries algorithm} = None
+\item 
+\mbox{\Hypertarget{namespacemain_a39291a4fdf86b1e30594d58742eaa565}\label{namespacemain_a39291a4fdf86b1e30594d58742eaa565}} 
+{\bfseries command} = None
+\item 
+\mbox{\Hypertarget{namespacemain_a1b1f131e34b68b7dc413298fce193d68}\label{namespacemain_a1b1f131e34b68b7dc413298fce193d68}} 
+list {\bfseries page\+\_\+table} = \mbox{[}-\/1\mbox{]} $\ast$ P\+A\+G\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+S\+I\+ZE
+\item 
+\mbox{\Hypertarget{namespacemain_a6cb3fb0bf35467bfb4b96e8c9f138e17}\label{namespacemain_a6cb3fb0bf35467bfb4b96e8c9f138e17}} 
+{\bfseries tlb} = \mbox{\hyperlink{classVirtualMemory_1_1TLB}{T\+LB}}(tlb\+\_\+page=\mbox{[}D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE\mbox{]} $\ast$ T\+L\+B\+\_\+\+S\+I\+ZE, tlb\+\_\+frame=\mbox{[}D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+A\+L\+UE\mbox{]} $\ast$ T\+L\+B\+\_\+\+S\+I\+ZE, index=0)
+\item 
+\mbox{\Hypertarget{namespacemain_a2f6c4ca966c8f759f4051d6726311ede}\label{namespacemain_a2f6c4ca966c8f759f4051d6726311ede}} 
+int {\bfseries page\+\_\+faults} = 0
+\item 
+\mbox{\Hypertarget{namespacemain_a1d9342510dc6e9b2d24038f12ddfae1f}\label{namespacemain_a1d9342510dc6e9b2d24038f12ddfae1f}} 
+int {\bfseries open\+\_\+frame} = 0
+\item 
+\mbox{\Hypertarget{namespacemain_a61a4913dc58f620df5ab0c49c7da1653}\label{namespacemain_a61a4913dc58f620df5ab0c49c7da1653}} 
+int {\bfseries input\+\_\+count} = 0
+\item 
+\mbox{\Hypertarget{namespacemain_ad07b7ed42393b4404e7b6abd8d3d76b7}\label{namespacemain_ad07b7ed42393b4404e7b6abd8d3d76b7}} 
+int {\bfseries tlb\+\_\+hits} = 0
+\item 
+\mbox{\Hypertarget{namespacemain_aa54b1e13b5013e8a3330fefe56ff7b1f}\label{namespacemain_aa54b1e13b5013e8a3330fefe56ff7b1f}} 
+list {\bfseries physical\+\_\+memory} = \mbox{[}\mbox{[}0\mbox{]} $\ast$ P\+H\+Y\+S\+I\+C\+A\+L\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE\mbox{]} $\ast$ P\+H\+Y\+S\+I\+C\+A\+L\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+Z\+E\+\_\+Q
+\item 
+\mbox{\Hypertarget{namespacemain_abb92329d57de0cb5b6458185e4dc606d}\label{namespacemain_abb92329d57de0cb5b6458185e4dc606d}} 
+{\bfseries virtual\+\_\+address}
+\item 
+\mbox{\Hypertarget{namespacemain_ad5a4d0dea50adb33f61498b2c78cf178}\label{namespacemain_ad5a4d0dea50adb33f61498b2c78cf178}} 
+int {\bfseries page\+\_\+fault\+\_\+rate} = page\+\_\+faults / input\+\_\+count
+\item 
+\mbox{\Hypertarget{namespacemain_a95aae85d47fadb4296a1e1a67fe2e954}\label{namespacemain_a95aae85d47fadb4296a1e1a67fe2e954}} 
+int {\bfseries tlb\+\_\+hit\+\_\+rate} = tlb\+\_\+hits / input\+\_\+count
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This project consists of writing a program that translates logical to physical addresses for a virtual address space of size 216 = 65,536 bytes. 
+
+To execute this program: python[version] main.py [path_to_txt_file].txt <table size> <algorithm [FIFO or LRU]>\end{DoxyVerb}
+ 
